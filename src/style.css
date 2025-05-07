@@ -48,12 +48,53 @@ h1 {
   background-color: #005fa3;
 }
 
-.filter {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.filter-group {
+  position: relative;
   margin-bottom: 1rem;
-  font-size: 0.95rem;
+  display: flex;
+  justify-content: center; 
+}
+
+
+.filter-group > button {
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filter-options {
+  position: absolute;
+  top: 110%;
+  left: 50%; 
+  transform: translateX(-50%); 
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 200px; 
+  text-align: left;
+}
+
+
+.filter-options button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  
+}
+
+.filter-options button:hover {
+  background: #f0f0f0;
+  
 }
 
 .todo-list {
