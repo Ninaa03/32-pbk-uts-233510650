@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Daftar Aktivitas Harian</h1>
+    <h1>Daftar Tugas Harian</h1>
 
     <div class="input-group">
       <input
